@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# preventing host to comunicate with nat64
+ip -6 route add unreachable 64:ff9b::/96
+ip6tables -A OUTPUT -d 64:ff9b::/96 -j REJECT
