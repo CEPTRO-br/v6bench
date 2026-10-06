@@ -11,10 +11,8 @@ fi
 echo "Starting Tests"
 sudo kathara lstart --noterminals -d "${KATHARA_PATH}"
 
-while kathara linfo -d "${KATHARA_PATH}" |grep -Fq 'running'; do
-    echo "Tests still running. Checking again in 10 seconds"
-    sleep 10
-done
+echo "Holding until execution finishes"
+(kathara exec -d "${KATHARA_PATH}" gateway sleep infinity) >/dev/null 2>&1
 
 echo "Tests are now completed. Cleaning environment"
 kathara lclean -d "${KATHARA_PATH}"
