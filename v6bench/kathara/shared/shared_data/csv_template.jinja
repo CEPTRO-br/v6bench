@@ -6,10 +6,8 @@
 "started_at"{{- "," -}}
 "total_time"{{- "," -}}
 "url"{{- "," -}}
-"all_tests_passed"{{- "," -}}
-"test_name"
+"all_tests_passed"
 {% for result in results -%}
-{% for test in result.tests_results -%}
     "{{ project_name }}"{{- "," -}}
     "{{ now }}"{{- "," -}}
     {{ session.successes }}{{- "," -}}
@@ -18,7 +16,5 @@
     "{{ session.started_at }}"{{- "," -}}
     "{{ session.elapsed_time() }}"{{- "," -}}
     "{{ result.response.request.url }}"{{- "," -}}
-    {{ result.no_failure }}{{- "," -}}
-    "{{ test.name }}"
-{% endfor %}
+    {{ result.no_failure }}
 {%- endfor %}

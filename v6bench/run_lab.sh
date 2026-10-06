@@ -11,7 +11,7 @@ fi
 echo "Starting Tests"
 sudo kathara lstart --noterminals -d "${KATHARA_PATH}"
 
-while [ "$(kathara linfo -d "${KATHARA_PATH}" |grep -Fq 'running')" -ne 0 ]; do
+while kathara linfo -d "${KATHARA_PATH}" |grep -Fq 'running'; do
     echo "Tests still running. Checking again in 10 seconds"
     sleep 10
 done

@@ -1,8 +1,10 @@
 #!/bin/sh
 
 # shellcheck disable=SC1091
-. /shared/env/credentials.env
 . /shared/env/test_vars.env
+if [ -f /shared/env/credentials.env ]; then
+    . /shared/env/credentials.env
+fi
 
 pip install "curlify2<2.0.0,>=1.0.1" --break-system-packages --no-cache-dir # workarround for version compatibility issue with scanapi
 pip install scanapi==2.13.2 --break-system-packages --no-cache-dir
