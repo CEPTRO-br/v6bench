@@ -95,6 +95,16 @@ SCRIPT_PATH="$(dirname "$(realpath "$0")")"
 SHARED_DIR="${SCRIPT_PATH}/kathara/shared"
 TEST_VARS_PATH="${SHARED_DIR}/env/test_vars.env"
 
+if [ ! -d "${SHARED_DIR}/env/" ]; then
+    echo "Creating directory ${SHARED_DIR}/env/"
+    mkdir -p "${SHARED_DIR}/env/"
+fi
+
+if [ ! -d "${SHARED_DIR}/results/" ]; then
+    echo "Creating directory ${SHARED_DIR}/results/"
+    mkdir -p "${SHARED_DIR}/results/"
+fi
+
 echo "Creating '${TEST_VARS_PATH}'"
 grep -Po '(?<=\$\{)\w+(?=\})' scanapi.yaml |\
     grep -vFx 'BASE_URL' |\
