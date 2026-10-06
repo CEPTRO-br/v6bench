@@ -94,7 +94,51 @@
   <dia:layer name="Background" visible="true" connectable="false"/>
   <dia:layer name="Background" visible="true" connectable="false"/>
   <dia:layer name="Background" visible="true" connectable="true" active="true">
-    <dia:object type="Cisco - PC" version="1" id="O0">
+    <dia:object type="UML - LargePackage" version="0" id="O0">
+      <dia:attribute name="obj_pos">
+        <dia:point val="-11.7744,-4.57813"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="-11.8244,-5.62813;22.2756,18.9719"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="-11.7744,-4.57813"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="34"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="23.500000000000004"/>
+      </dia:attribute>
+      <dia:attribute name="name">
+        <dia:string>#  V6bench Host  #</dia:string>
+      </dia:attribute>
+      <dia:attribute name="stereotype">
+        <dia:string>##</dia:string>
+      </dia:attribute>
+      <dia:attribute name="text_font">
+        <dia:font family="monospace" style="0" name="Courier"/>
+      </dia:attribute>
+      <dia:attribute name="text_height">
+        <dia:real val="0.80000000000000004"/>
+      </dia:attribute>
+      <dia:attribute name="text_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.10000000000000001"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000ff"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffffff"/>
+      </dia:attribute>
+    </dia:object>
+    <dia:object type="Cisco - PC" version="1" id="O1">
       <dia:attribute name="obj_pos">
         <dia:point val="5.6134,2.15328"/>
       </dia:attribute>
@@ -139,7 +183,7 @@
         <dia:real val="1"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="Standard - Text" version="1" id="O1">
+    <dia:object type="Standard - Text" version="1" id="O2">
       <dia:attribute name="obj_pos">
         <dia:point val="6.39521,4.15328"/>
       </dia:attribute>
@@ -172,10 +216,10 @@
         <dia:enum val="0"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O0" connection="5"/>
+        <dia:connection handle="0" to="O1" connection="5"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Cisco - PC" version="1" id="O2">
+    <dia:object type="Cisco - PC" version="1" id="O3">
       <dia:attribute name="obj_pos">
         <dia:point val="5.6134,10.5116"/>
       </dia:attribute>
@@ -220,7 +264,7 @@
         <dia:real val="1"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="Standard - Text" version="1" id="O3">
+    <dia:object type="Standard - Text" version="1" id="O4">
       <dia:attribute name="obj_pos">
         <dia:point val="6.39521,12.5116"/>
       </dia:attribute>
@@ -253,10 +297,10 @@
         <dia:enum val="0"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O2" connection="5"/>
+        <dia:connection handle="0" to="O3" connection="5"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Cisco - PC" version="1" id="O4">
+    <dia:object type="Cisco - PC" version="1" id="O5">
       <dia:attribute name="obj_pos">
         <dia:point val="5.6134,14.6907"/>
       </dia:attribute>
@@ -301,7 +345,7 @@
         <dia:real val="1"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="Standard - Text" version="1" id="O5">
+    <dia:object type="Standard - Text" version="1" id="O6">
       <dia:attribute name="obj_pos">
         <dia:point val="6.39521,16.6907"/>
       </dia:attribute>
@@ -334,10 +378,10 @@
         <dia:enum val="0"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O4" connection="5"/>
+        <dia:connection handle="0" to="O5" connection="5"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Cisco - PC" version="1" id="O6">
+    <dia:object type="Cisco - PC" version="1" id="O7">
       <dia:attribute name="obj_pos">
         <dia:point val="5.6134,6.33242"/>
       </dia:attribute>
@@ -382,7 +426,7 @@
         <dia:real val="1"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="Standard - Text" version="1" id="O7">
+    <dia:object type="Standard - Text" version="1" id="O8">
       <dia:attribute name="obj_pos">
         <dia:point val="6.39521,8.33242"/>
       </dia:attribute>
@@ -415,10 +459,10 @@
         <dia:enum val="0"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O6" connection="5"/>
+        <dia:connection handle="0" to="O7" connection="5"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Cisco - NAT" version="1" id="O8">
+    <dia:object type="Cisco - NAT" version="1" id="O9">
       <dia:attribute name="obj_pos">
         <dia:point val="14.224,14.9541"/>
       </dia:attribute>
@@ -463,7 +507,7 @@
         <dia:real val="1"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="Standard - Text" version="1" id="O9">
+    <dia:object type="Standard - Text" version="1" id="O10">
       <dia:attribute name="obj_pos">
         <dia:point val="15.8933,16.9541"/>
       </dia:attribute>
@@ -496,21 +540,21 @@
         <dia:enum val="0"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O8" connection="5"/>
+        <dia:connection handle="0" to="O9" connection="5"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Cisco - NAT" version="1" id="O10">
+    <dia:object type="Cisco - NAT" version="1" id="O11">
       <dia:attribute name="obj_pos">
-        <dia:point val="25.9765,2.78592"/>
+        <dia:point val="18.0765,2.53592"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="25.9741,2.78351;29.6565,4.78821"/>
+        <dia:rectangle val="18.0741,2.53351;21.7565,4.53821"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
-        <dia:point val="25.9765,2.78592"/>
+        <dia:point val="18.0765,2.53592"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
         <dia:real val="3.6776171703898375"/>
@@ -544,12 +588,12 @@
         <dia:real val="1"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="Standard - Text" version="1" id="O11">
+    <dia:object type="Standard - Text" version="1" id="O12">
       <dia:attribute name="obj_pos">
-        <dia:point val="27.6458,4.78592"/>
+        <dia:point val="19.7458,4.53592"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="27.0746,4.78592;28.2171,5.66092"/>
+        <dia:rectangle val="19.1745,4.53592;20.317,5.41092"/>
       </dia:attribute>
       <dia:attribute name="text">
         <dia:composite type="text">
@@ -563,7 +607,7 @@
             <dia:real val="0.80000000000000004"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="27.6458,5.47092"/>
+            <dia:point val="19.7458,5.22092"/>
           </dia:attribute>
           <dia:attribute name="color">
             <dia:color val="#000000ff"/>
@@ -577,10 +621,10 @@
         <dia:enum val="0"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O10" connection="5"/>
+        <dia:connection handle="0" to="O11" connection="5"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Text" version="1" id="O12">
+    <dia:object type="Standard - Text" version="1" id="O13">
       <dia:attribute name="obj_pos">
         <dia:point val="27.7064,11.1633"/>
       </dia:attribute>
@@ -615,10 +659,10 @@ API Server#</dia:string>
         <dia:enum val="0"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O13" connection="5"/>
+        <dia:connection handle="0" to="O14" connection="5"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Cisco - Web cluster" version="1" id="O13">
+    <dia:object type="Cisco - Web cluster" version="1" id="O14">
       <dia:attribute name="obj_pos">
         <dia:point val="25.8586,9.16334"/>
       </dia:attribute>
@@ -663,7 +707,7 @@ API Server#</dia:string>
         <dia:real val="1"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="Cisco - File Server" version="1" id="O14">
+    <dia:object type="Cisco - File Server" version="1" id="O15">
       <dia:attribute name="obj_pos">
         <dia:point val="27.1166,-1.84378"/>
       </dia:attribute>
@@ -708,7 +752,7 @@ API Server#</dia:string>
         <dia:real val="1"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="Standard - Text" version="1" id="O15">
+    <dia:object type="Standard - Text" version="1" id="O16">
       <dia:attribute name="obj_pos">
         <dia:point val="27.6635,0.156223"/>
       </dia:attribute>
@@ -742,10 +786,10 @@ example.com#</dia:string>
         <dia:enum val="0"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O14" connection="5"/>
+        <dia:connection handle="0" to="O15" connection="5"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Cisco - File Server" version="1" id="O16">
+    <dia:object type="Cisco - File Server" version="1" id="O17">
       <dia:attribute name="obj_pos">
         <dia:point val="-5.52805,8.73953"/>
       </dia:attribute>
@@ -790,7 +834,7 @@ example.com#</dia:string>
         <dia:real val="1"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="Standard - Text" version="1" id="O17">
+    <dia:object type="Standard - Text" version="1" id="O18">
       <dia:attribute name="obj_pos">
         <dia:point val="-4.98117,10.7395"/>
       </dia:attribute>
@@ -824,10 +868,10 @@ example.com#</dia:string>
         <dia:enum val="0"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O16" connection="5"/>
+        <dia:connection handle="0" to="O17" connection="5"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Cisco - Relational Database" version="1" id="O18">
+    <dia:object type="Cisco - Relational Database" version="1" id="O19">
       <dia:attribute name="obj_pos">
         <dia:point val="-4.31249,-0.795927"/>
       </dia:attribute>
@@ -872,7 +916,7 @@ example.com#</dia:string>
         <dia:real val="1"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="Standard - Text" version="1" id="O19">
+    <dia:object type="Standard - Text" version="1" id="O20">
       <dia:attribute name="obj_pos">
         <dia:point val="-2.88786,1.20407"/>
       </dia:attribute>
@@ -908,10 +952,10 @@ A                   SIIT                   -&gt;        siit.example.com#</dia:s
         <dia:enum val="0"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O18" connection="1"/>
+        <dia:connection handle="0" to="O19" connection="1"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - BezierLine" version="0" id="O20">
+    <dia:object type="Standard - BezierLine" version="0" id="O21">
       <dia:attribute name="obj_pos">
         <dia:point val="-4.31249,0.200766"/>
       </dia:attribute>
@@ -938,11 +982,11 @@ A                   SIIT                   -&gt;        siit.example.com#</dia:s
         <dia:real val="0.5"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O18" connection="4"/>
-        <dia:connection handle="3" to="O16" connection="7"/>
+        <dia:connection handle="0" to="O19" connection="4"/>
+        <dia:connection handle="3" to="O17" connection="7"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O21">
+    <dia:object type="Standard - Line" version="0" id="O22">
       <dia:attribute name="obj_pos">
         <dia:point val="-4.28616,10.0672"/>
       </dia:attribute>
@@ -966,11 +1010,11 @@ A                   SIIT                   -&gt;        siit.example.com#</dia:s
         <dia:real val="0.5"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O16" connection="10"/>
-        <dia:connection handle="1" to="O4" connection="11"/>
+        <dia:connection handle="0" to="O17" connection="10"/>
+        <dia:connection handle="1" to="O5" connection="11"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O22">
+    <dia:object type="Standard - Line" version="0" id="O23">
       <dia:attribute name="obj_pos">
         <dia:point val="-4.28616,9.8445"/>
       </dia:attribute>
@@ -994,11 +1038,11 @@ A                   SIIT                   -&gt;        siit.example.com#</dia:s
         <dia:real val="0.5"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O16" connection="10"/>
-        <dia:connection handle="1" to="O2" connection="11"/>
+        <dia:connection handle="0" to="O17" connection="10"/>
+        <dia:connection handle="1" to="O3" connection="11"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O23">
+    <dia:object type="Standard - Line" version="0" id="O24">
       <dia:attribute name="obj_pos">
         <dia:point val="-4.28616,9.39914"/>
       </dia:attribute>
@@ -1022,11 +1066,11 @@ A                   SIIT                   -&gt;        siit.example.com#</dia:s
         <dia:real val="0.5"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O16" connection="10"/>
-        <dia:connection handle="1" to="O0" connection="11"/>
+        <dia:connection handle="0" to="O17" connection="10"/>
+        <dia:connection handle="1" to="O1" connection="11"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O24">
+    <dia:object type="Standard - Line" version="0" id="O25">
       <dia:attribute name="obj_pos">
         <dia:point val="-4.28616,9.62182"/>
       </dia:attribute>
@@ -1050,11 +1094,11 @@ A                   SIIT                   -&gt;        siit.example.com#</dia:s
         <dia:real val="0.5"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O16" connection="10"/>
-        <dia:connection handle="1" to="O6" connection="11"/>
+        <dia:connection handle="0" to="O17" connection="10"/>
+        <dia:connection handle="1" to="O7" connection="11"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Text" version="1" id="O25">
+    <dia:object type="Standard - Text" version="1" id="O26">
       <dia:attribute name="obj_pos">
         <dia:point val="17.0015,6.76807"/>
       </dia:attribute>
@@ -1093,10 +1137,10 @@ A                   SIIT                   -&gt;        siit.example.com#</dia:s
         <dia:real val="19"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O38" connection="0"/>
+        <dia:connection handle="0" to="O39" connection="0"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O26">
+    <dia:object type="Standard - Line" version="0" id="O27">
       <dia:attribute name="obj_pos">
         <dia:point val="7.82449,7.65713"/>
       </dia:attribute>
@@ -1120,48 +1164,20 @@ A                   SIIT                   -&gt;        siit.example.com#</dia:s
         <dia:real val="0.5"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O6" connection="11"/>
-        <dia:connection handle="1" to="O13" connection="10"/>
-      </dia:connections>
-    </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O27">
-      <dia:attribute name="obj_pos">
-        <dia:point val="27.7901,4.78681"/>
-      </dia:attribute>
-      <dia:attribute name="obj_bb">
-        <dia:rectangle val="27.3366,4.73557;28.06,9.21481"/>
-      </dia:attribute>
-      <dia:attribute name="conn_endpoints">
-        <dia:point val="27.7901,4.78681"/>
-        <dia:point val="27.6802,9.16357"/>
-      </dia:attribute>
-      <dia:attribute name="numcp">
-        <dia:int val="1"/>
-      </dia:attribute>
-      <dia:attribute name="end_arrow">
-        <dia:enum val="22"/>
-      </dia:attribute>
-      <dia:attribute name="end_arrow_length">
-        <dia:real val="0.5"/>
-      </dia:attribute>
-      <dia:attribute name="end_arrow_width">
-        <dia:real val="0.5"/>
-      </dia:attribute>
-      <dia:connections>
-        <dia:connection handle="0" to="O10" connection="10"/>
-        <dia:connection handle="1" to="O13" connection="10"/>
+        <dia:connection handle="0" to="O7" connection="11"/>
+        <dia:connection handle="1" to="O14" connection="10"/>
       </dia:connections>
     </dia:object>
     <dia:object type="Standard - Line" version="0" id="O28">
       <dia:attribute name="obj_pos">
-        <dia:point val="7.8198,3.35544"/>
+        <dia:point val="21.0506,4.53675"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="7.76872,3.30437;26.0265,4.09524"/>
+        <dia:rectangle val="20.9801,4.46619;26.6552,9.46938"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
-        <dia:point val="7.8198,3.35544"/>
-        <dia:point val="25.9755,3.74922"/>
+        <dia:point val="21.0506,4.53675"/>
+        <dia:point val="26.5846,9.39882"/>
       </dia:attribute>
       <dia:attribute name="numcp">
         <dia:int val="1"/>
@@ -1176,11 +1192,39 @@ A                   SIIT                   -&gt;        siit.example.com#</dia:s
         <dia:real val="0.5"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O0" connection="11"/>
-        <dia:connection handle="1" to="O10" connection="10"/>
+        <dia:connection handle="0" to="O11" connection="10"/>
+        <dia:connection handle="1" to="O14" connection="10"/>
       </dia:connections>
     </dia:object>
     <dia:object type="Standard - Line" version="0" id="O29">
+      <dia:attribute name="obj_pos">
+        <dia:point val="7.79933,3.3487"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="7.74856,3.13707;18.1263,3.86059"/>
+      </dia:attribute>
+      <dia:attribute name="conn_endpoints">
+        <dia:point val="7.79933,3.3487"/>
+        <dia:point val="18.0755,3.5102"/>
+      </dia:attribute>
+      <dia:attribute name="numcp">
+        <dia:int val="1"/>
+      </dia:attribute>
+      <dia:attribute name="end_arrow">
+        <dia:enum val="22"/>
+      </dia:attribute>
+      <dia:attribute name="end_arrow_length">
+        <dia:real val="0.5"/>
+      </dia:attribute>
+      <dia:attribute name="end_arrow_width">
+        <dia:real val="0.5"/>
+      </dia:attribute>
+      <dia:connections>
+        <dia:connection handle="0" to="O1" connection="11"/>
+        <dia:connection handle="1" to="O11" connection="10"/>
+      </dia:connections>
+    </dia:object>
+    <dia:object type="Standard - Line" version="0" id="O30">
       <dia:attribute name="obj_pos">
         <dia:point val="7.45221,11.6446"/>
       </dia:attribute>
@@ -1204,11 +1248,11 @@ A                   SIIT                   -&gt;        siit.example.com#</dia:s
         <dia:real val="0.5"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O2" connection="11"/>
-        <dia:connection handle="1" to="O13" connection="10"/>
+        <dia:connection handle="0" to="O3" connection="11"/>
+        <dia:connection handle="1" to="O14" connection="10"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O30">
+    <dia:object type="Standard - Line" version="0" id="O31">
       <dia:attribute name="obj_pos">
         <dia:point val="7.8243,15.9059"/>
       </dia:attribute>
@@ -1232,11 +1276,11 @@ A                   SIIT                   -&gt;        siit.example.com#</dia:s
         <dia:real val="0.5"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O4" connection="11"/>
-        <dia:connection handle="1" to="O8" connection="7"/>
+        <dia:connection handle="0" to="O5" connection="11"/>
+        <dia:connection handle="1" to="O9" connection="7"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O31">
+    <dia:object type="Standard - Line" version="0" id="O32">
       <dia:attribute name="obj_pos">
         <dia:point val="17.9023,15.0648"/>
       </dia:attribute>
@@ -1260,11 +1304,11 @@ A                   SIIT                   -&gt;        siit.example.com#</dia:s
         <dia:real val="0.5"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O8" connection="10"/>
-        <dia:connection handle="1" to="O13" connection="10"/>
+        <dia:connection handle="0" to="O9" connection="10"/>
+        <dia:connection handle="1" to="O14" connection="10"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O32">
+    <dia:object type="Standard - Line" version="0" id="O33">
       <dia:attribute name="obj_pos">
         <dia:point val="7.43882,15.6858"/>
       </dia:attribute>
@@ -1288,11 +1332,11 @@ A                   SIIT                   -&gt;        siit.example.com#</dia:s
         <dia:real val="0.5"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O4" connection="11"/>
-        <dia:connection handle="1" to="O13" connection="10"/>
+        <dia:connection handle="0" to="O5" connection="11"/>
+        <dia:connection handle="1" to="O14" connection="10"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Text" version="1" id="O33">
+    <dia:object type="Standard - Text" version="1" id="O34">
       <dia:attribute name="obj_pos">
         <dia:point val="11.0242,16.0137"/>
       </dia:attribute>
@@ -1328,15 +1372,15 @@ A                   SIIT                   -&gt;        siit.example.com#</dia:s
         <dia:real val="0.10000000000000001"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O30" connection="0"/>
+        <dia:connection handle="0" to="O31" connection="0"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Text" version="1" id="O34">
+    <dia:object type="Standard - Text" version="1" id="O35">
       <dia:attribute name="obj_pos">
-        <dia:point val="16.8976,3.55233"/>
+        <dia:point val="12.9374,3.42945"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="14.8889,2.70521;18.9237,3.45233"/>
+        <dia:rectangle val="10.9287,2.63445;14.9462,3.32945"/>
       </dia:attribute>
       <dia:attribute name="text">
         <dia:composite type="text">
@@ -1350,7 +1394,7 @@ A                   SIIT                   -&gt;        siit.example.com#</dia:s
             <dia:real val="0.63499999312083333"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="16.8976,3.26758"/>
+            <dia:point val="12.9374,3.17945"/>
           </dia:attribute>
           <dia:attribute name="color">
             <dia:color val="#000000ff"/>
@@ -1367,10 +1411,10 @@ A                   SIIT                   -&gt;        siit.example.com#</dia:s
         <dia:real val="0.10000000000000001"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O28" connection="0"/>
+        <dia:connection handle="0" to="O29" connection="0"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Text" version="1" id="O35">
+    <dia:object type="Standard - Text" version="1" id="O36">
       <dia:attribute name="obj_pos">
         <dia:point val="16.8047,13.2065"/>
       </dia:attribute>
@@ -1409,10 +1453,10 @@ A                   SIIT                   -&gt;        siit.example.com#</dia:s
         <dia:real val="-13"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O32" connection="0"/>
+        <dia:connection handle="0" to="O33" connection="0"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Text" version="1" id="O36">
+    <dia:object type="Standard - Text" version="1" id="O37">
       <dia:attribute name="obj_pos">
         <dia:point val="16.7061,11.0448"/>
       </dia:attribute>
@@ -1451,10 +1495,10 @@ A                   SIIT                   -&gt;        siit.example.com#</dia:s
         <dia:real val="-3"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O29" connection="0"/>
+        <dia:connection handle="0" to="O30" connection="0"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Text" version="1" id="O37">
+    <dia:object type="Standard - Text" version="1" id="O38">
       <dia:attribute name="obj_pos">
         <dia:point val="16.8532,8.87682"/>
       </dia:attribute>
@@ -1493,10 +1537,10 @@ A                   SIIT                   -&gt;        siit.example.com#</dia:s
         <dia:real val="8"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O26" connection="0"/>
+        <dia:connection handle="0" to="O27" connection="0"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O38">
+    <dia:object type="Standard - Line" version="0" id="O39">
       <dia:attribute name="obj_pos">
         <dia:point val="7.79163,3.68284"/>
       </dia:attribute>
@@ -1520,11 +1564,11 @@ A                   SIIT                   -&gt;        siit.example.com#</dia:s
         <dia:real val="0.5"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O0" connection="11"/>
-        <dia:connection handle="1" to="O13" connection="10"/>
+        <dia:connection handle="0" to="O1" connection="11"/>
+        <dia:connection handle="1" to="O14" connection="10"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O39">
+    <dia:object type="Standard - Line" version="0" id="O40">
       <dia:attribute name="obj_pos">
         <dia:point val="27.1164,-0.821523"/>
       </dia:attribute>
@@ -1548,8 +1592,8 @@ A                   SIIT                   -&gt;        siit.example.com#</dia:s
         <dia:real val="0.5"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O14" connection="10"/>
-        <dia:connection handle="1" to="O18" connection="8"/>
+        <dia:connection handle="0" to="O15" connection="10"/>
+        <dia:connection handle="1" to="O19" connection="8"/>
       </dia:connections>
     </dia:object>
   </dia:layer>
