@@ -34,9 +34,12 @@ fi
 
 URL_TEMPLATE="lab.${BASE_DOMAIN}"
 for sdom in ${SDOMS}; do
-    BASE_URL="${BASE_PROTO}://${sdom}.${URL_TEMPLATE}" \
-        scanapi run \
-        -o "/shared/results/${HOSTNAME}-${sdom}-report.csv" \
-        -t "/shared/shared_data/csv_template.jinja" \
-        /shared/shared_data/scanapi.yaml
+    export BASE_URL="${BASE_PROTO}://${sdom}.${URL_TEMPLATE}"
+    OUTPUT_FILE="/shared/results/${HOSTNAME}-${sdom}-report.csv"
+    scanapi run \
+    -o "${OUTPUT_FILE}" \
+    -t "/shared/shared_data/csv_template.jinja" \
+    /shared/shared_data/scanapi.yaml
+
+    sed -i "2,\$s/^/\"${HOSTNAME}\",/" "${OUTPUT_FILE}"
 done
