@@ -15,6 +15,8 @@ V6Bench helps Quality Assurance teams validate IPv6 readiness throughout the sof
 ## Requirements
 
 * [ScanAPI](https://scanapi.dev/)
+   * Currently using version 2.13.2
+       * Requires `curlify2<2.0.0,>=1.0.1`
 * Docker
    * Must enable IPv6 for the default bridge network ([ref](https://docs.docker.com/engine/daemon/ipv6/#use-ipv6-for-the-default-bridge-network))
 * [Kathará](https://www.kathara.org/)
