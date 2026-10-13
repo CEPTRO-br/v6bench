@@ -51,7 +51,7 @@ The diagram below illustrates the architecture and the test workflow.
 
    Then:
 
-   * Customize the generated test plan in `v6bench/scanapi.yaml`.
+   * Customize the generated test plan in `v6bench/kathara/shared/shared_data/scanapi.yaml`.
    * Variables are automatically exported as environment variables. Runtime values should be customized in the generated configuration.
 
 5. Configure the environment files under `v6bench/kathara/shared/env/`:
