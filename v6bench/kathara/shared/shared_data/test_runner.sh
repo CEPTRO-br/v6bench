@@ -6,6 +6,13 @@ if [ -f /shared/env/credentials.env ]; then
     . /shared/env/credentials.env
 fi
 
+if timeout 60 sh -c "until nslookup ${BASE_DOMAIN} >/dev/null 2>&1; do sleep 1; done"; then
+    echo "DNS server is up"
+else
+    echo "Timed out waiting for DNS server" >&2
+fi
+
+
 pip install "curlify2<2.0.0,>=1.0.1" --break-system-packages --no-cache-dir # workarround for version compatibility issue with scanapi
 pip install scanapi==2.13.2 --break-system-packages --no-cache-dir
 HOSTNAME="$(/usr/bin/hostname)"
