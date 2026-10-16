@@ -49,7 +49,7 @@ for sdom in ${SDOMS}; do
     scanapi run \
     -o "${OUTPUT_FILE}" \
     -t "/shared/shared_data/csv_template.jinja" \
-    /shared/shared_data/scanapi.yaml
+    /shared/shared_data/scanapi.yaml > "/shared/results/logs/${HOSTNAME}-${sdom}.log" 2>&1
 
     sed -i "2,\$s/^/\"${HOSTNAME}\",/" "${OUTPUT_FILE}"
 done

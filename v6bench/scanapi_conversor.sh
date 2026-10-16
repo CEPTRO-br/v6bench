@@ -100,9 +100,9 @@ if [ ! -d "${SHARED_DIR}/env/" ]; then
     mkdir -p "${SHARED_DIR}/env/"
 fi
 
-if [ ! -d "${SHARED_DIR}/results/" ]; then
-    echo "Creating directory ${SHARED_DIR}/results/"
-    mkdir -p "${SHARED_DIR}/results/"
+if [ ! -d "${SHARED_DIR}/results/logs/" ]; then
+    echo "Creating directory ${SHARED_DIR}/results/logs/"
+    mkdir -p "${SHARED_DIR}/results/logs/"
 fi
 
 echo "Creating '${TEST_VARS_PATH}'"
