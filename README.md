@@ -45,6 +45,8 @@ The diagram below illustrates the architecture and the test workflow.
 
 4. Generate the ScanAPI test template:
 
+> ⚠️ At this stage, you need `ScanAPI` installed in your environment. You can use Python's `pip` module to install it: [ScanAPI on pypi](https://pypi.org/project/scanapi/).
+
    ```bash
    v6bench/scanapi_conversor.sh -i OPENAPI_PATH
    ```
