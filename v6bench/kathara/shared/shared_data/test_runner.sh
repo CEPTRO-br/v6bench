@@ -13,10 +13,7 @@ else
 fi
 
 
-pip install "curlify2<2.0.0,>=1.0.1" --break-system-packages --no-cache-dir # workarround for version compatibility issue with scanapi
-pip install scanapi==2.13.2 --break-system-packages --no-cache-dir
 HOSTNAME="$(/usr/bin/hostname)"
-
 
 
 URL_TEMPLATE="lab.${BASE_DOMAIN}"
