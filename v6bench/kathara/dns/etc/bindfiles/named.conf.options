@@ -22,6 +22,7 @@ options {
 
 	listen-on-v6 { any; };
 	dns64 64:ff9b::/96 {
-		clients { any; };
+		clients { 2001:db8:1::664; };
+		mapped { any; };
 	};
 };
