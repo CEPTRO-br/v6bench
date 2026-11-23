@@ -29,9 +29,9 @@ if ! docker image inspect v6bench/client:latest > /dev/null 2>&1; then
 fi
 
 # building docker image for clients if needed
-if ! docker image inspect v6bench/jool:latest > /dev/null 2>&1; then
+if ! docker image inspect v6bench/translator:latest > /dev/null 2>&1; then
 	echo "Building docker image for v6bench NAT64 and SIIT-DC nodes"
-	docker build -f "${SCRIPT_PATH}/v6bench_jool.Dockerfile" -t v6bench/jool:latest .
+	docker build -f "${SCRIPT_PATH}/v6bench_translator.Dockerfile" -t v6bench/translator:latest .
 fi
 
 # checking if lab still exists and cleans if needed
