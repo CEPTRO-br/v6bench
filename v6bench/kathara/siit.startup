@@ -14,12 +14,12 @@ tun-device siit
 ipv4-addr 192.168.254.1
 ipv6-addr 2001:db8:47::1
 prefix 2001:db8:46::/96
-map 192.168.0.1  2001:db8:4::C0A8:1
-map 192.168.0.10 2001:db8:4::C0A8:a
-map 192.168.0.40 2001:db8:4::C0A8:28
-map 192.168.0.46 2001:db8:4::C0A8:2e
-map 192.168.0.53 2001:db8:4::C0A8:35
-map 192.168.0.64 2001:db8:4::C0A8:40
+map 192.168.0.1  2001:db8:4::c0a8:1
+map 192.168.0.10 2001:db8:4::c0a8:a
+map 192.168.0.40 2001:db8:4::c0a8:28
+map 192.168.0.46 2001:db8:4::c0a8:2e
+map 192.168.0.53 2001:db8:4::c0a8:35
+map 192.168.0.64 2001:db8:4::c0a8:40
 map 192.168.46.1 ${BASE_IPV6}
 data-dir /var/spool/tayga
 CONF
@@ -27,7 +27,7 @@ CONF
 tayga --mktun -c /etc/tayga.conf
 ip link set siit up
 ip route add 192.168.46.0/24 dev siit
-ip -6 route add 2001:db8:4::/120 dev siit
+ip -6 route add 2001:db8:4::/96 dev siit
 tayga -c /etc/tayga.conf
 
 

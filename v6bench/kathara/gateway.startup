@@ -9,7 +9,7 @@ ip -6 route add 2001:db8:64::/96 via 2001:db8:1::64 dev eth0
 
 # SIIT route
 ip route add 192.168.46.0/24 via 192.168.0.46 dev eth0
-ip -6 route add 2001:db8:4::/120 via 2001:db8:1::46 dev eth0
+ip -6 route add 2001:db8:4::/96 via 2001:db8:1::46 dev eth0
 
 # NAT towards the bridged/external interface
 iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE

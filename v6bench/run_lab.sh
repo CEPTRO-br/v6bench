@@ -44,12 +44,12 @@ fi
 if [ "${MODE}" = "SCANAPI" ]; then
 	echo "Starting Tests in ScanAPI mode"
 	touch "${KATHARA_PATH}shared/shared_data/scanapi_mode"
-	sudo kathara lstart --noterminals -d "${KATHARA_PATH}"
+	kathara lstart --noterminals -d "${KATHARA_PATH}"
 	rm -f "${KATHARA_PATH}shared/shared_data/scanapi_mode"
 elif [ "${MODE}" = "MANUAL" ]; then
 	echo "Starting environment in manual mode"
 	touch "${KATHARA_PATH}shared/shared_data/manual_mode"
-	sudo kathara lstart -d "${KATHARA_PATH}"
+	kathara lstart -d "${KATHARA_PATH}"
 	rm -f "${KATHARA_PATH}shared/shared_data/manual_mode"
 else
 	exit
