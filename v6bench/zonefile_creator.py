@@ -5,7 +5,7 @@ import datetime
 import socket
 
 
-DEFAULT_NS   = ["192.168.0.53", "2001:db8::53"]  # noqa: E221
+DEFAULT_NS   = ["192.168.0.53", "2001:db8:1::53"]  # noqa: E221
 DEFAULT_SIIT = ["192.168.46.1"]
 
 
