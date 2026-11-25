@@ -9,6 +9,7 @@ if [ -f /shared/shared_data/scanapi_mode ]; then
         . /shared/env/credentials.env
     fi
 
+
     if timeout 60 sh -c "until nslookup ${BASE_DOMAIN} >/dev/null 2>&1; do sleep 1; done"; then
         echo "DNS server is up"
     else
@@ -42,7 +43,8 @@ if [ -f /shared/shared_data/scanapi_mode ]; then
 
         export BASE_URL="${BASE_PROTO}://${sdom}.${URL_TEMPLATE}"
         OUTPUT_FILE="/shared/results/${HOSTNAME}-${sdom}-report.csv"
-        scanapi run \
+
+        PYTHONPATH=/shared/shared_data/notls scanapi run \
         -o "${OUTPUT_FILE}" \
         -t "/shared/shared_data/csv_template.jinja" \
         /shared/shared_data/scanapi.yaml > "/shared/results/logs/${HOSTNAME}-${sdom}.log" 2>&1
