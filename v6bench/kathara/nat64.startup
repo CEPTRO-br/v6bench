@@ -7,5 +7,26 @@
 sysctl -w net.ipv4.ip_forward=1
 sysctl -w net.ipv6.conf.all.forwarding=1
 
-modprobe jool
-jool instance add "nat64" --netfilter --pool6 64:ff9b::/96 
+
+mkdir -p /dev/net /var/spool/tayga
+[ -c /dev/net/tun ] || mknod /dev/net/tun c 10 200
+
+
+cat > /etc/tayga.conf <<CONF
+tun-device nat64
+ipv4-addr 192.168.255.1
+ipv6-addr 2001:db8:ff::1
+prefix 2001:db8:64::/96
+dynamic-pool 192.168.255.0/24
+data-dir /var/spool/tayga
+CONF
+
+tayga --mktun -c /etc/tayga.conf
+ip link set nat64 up
+ip route add 192.168.255.0/24 dev nat64
+ip -6 route add 2001:db8:64::/96 dev nat64
+iptables -t nat -A POSTROUTING -s 192.168.255.0/24 -o eth0 -j MASQUERADE
+tayga -c /etc/tayga.conf
+
+# modprobe jool
+# jool instance add "nat64" --netfilter --pool6 64:ff9b::/96 

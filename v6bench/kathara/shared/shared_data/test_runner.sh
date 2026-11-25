@@ -33,7 +33,7 @@ if [ -f /shared/shared_data/scanapi_mode ]; then
             fi
         elif [ "${HOSTNAME}" = "ipv6_nat64_client" ] && [ "${sdom}" = "ipv4" ]; then
             # waiting to NAT64 to startup
-            if timeout 60 sh -c 'until ping -c 1 -W 1 64:ff9b::192.168.0.64 >/dev/null 2>&1; do sleep 1; done'; then
+            if timeout 60 sh -c 'until ping -c 1 -W 1 2001:db8:64::192.168.0.64 >/dev/null 2>&1; do sleep 1; done'; then
                 echo "NAT64 server is up"
             else
                 echo "Timed out waiting for NAT64 server" >&2
